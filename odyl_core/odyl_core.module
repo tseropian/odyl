@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ODYL Core feature.
+ */
+
+include_once 'odyl_core.features.inc';
