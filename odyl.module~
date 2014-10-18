@@ -1,5 +1,0 @@
-function odyl_update($node) {
-        if($node->type == "one_day"){
-		dpm($node);
-        }
-}
