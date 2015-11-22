@@ -1,5 +1,18 @@
-name: 'ODYL Core'
+name: 'Odyl Core'
 type: module
 core: 8.x
-version: 8.x-0.1
-features: true
+features:
+  required:
+    - core.base_field_override.node.one_day.promote
+    - core.base_field_override.node.one_day.status
+    - node.type.one_day
+    - core.entity_form_display.node.one_day.default
+    - core.entity_view_display.node.one_day.default
+    - core.entity_view_display.node.one_day.teaser
+    - field.field.node.one_day.body
+    - field.field.node.one_day.field_02pm_photo
+    - field.field.node.one_day.field_06pm_photo
+    - field.field.node.one_day.field_10am_photo
+    - field.field.node.one_day.field_10pm_photo
+    - field.field.node.one_day.field_one_day_location
+    - field.field.node.one_day.field_one_day_tags

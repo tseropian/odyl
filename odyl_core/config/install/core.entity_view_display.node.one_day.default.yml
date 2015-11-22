@@ -1,0 +1,76 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.one_day.body
+    - field.field.node.one_day.field_02pm_photo
+    - field.field.node.one_day.field_06pm_photo
+    - field.field.node.one_day.field_10am_photo
+    - field.field.node.one_day.field_10pm_photo
+    - field.field.node.one_day.field_one_day_location
+    - field.field.node.one_day.field_one_day_tags
+    - node.type.one_day
+  module:
+    - geolocation
+    - image
+    - text
+    - user
+id: node.one_day.default
+targetEntityType: node
+bundle: one_day
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_02pm_photo:
+    weight: 104
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_06pm_photo:
+    weight: 105
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_10am_photo:
+    weight: 106
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_10pm_photo:
+    weight: 107
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_one_day_location:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+  field_one_day_tags:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }

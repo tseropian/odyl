@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_one_day_location
+    - node.type.one_day
+  module:
+    - geolocation
+id: node.one_day.field_one_day_location
+field_name: field_one_day_location
+entity_type: node
+bundle: one_day
+label: 'One day location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation
